@@ -1,0 +1,28 @@
+<html>
+  <head>
+     <title>Meu projetos</title>
+  </head>
+      <body>
+       <h1>Olá mundo</h1>
+  <input type="number" id="numero1" placeholder="Digite o primeiro número">
+    <input type="number" id="numero2" placeholder="Digite o segundo número">
+    <button onclick="somar()">Somar</button>
+    <p id="resultado"></p>
+
+	<script>
+		function somar() {
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            
+            if (!isNaN(numero1) && !isNaN(numero2)) {
+                var resultado = numero1 + numero2;
+                document.getElementById("resultado").textContent = "Resultado: " + resultado;
+            } else {
+                document.getElementById("resultado").textContent = "Por favor, insira números válidos.";
+            }
+        }
+	</script>
+	
+      </body>
+
+<html>
